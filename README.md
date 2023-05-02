@@ -1,2 +1,2 @@
-# goit-markup-hw-06
-Forms & Validation
+# goit-markup-hw-07
+Adaptive & Responsive
