@@ -664,13 +664,28 @@ address {
   margin-bottom: 8px;
 }
 
-/* ========== SECTION-2 "We doing",(3) (h2) ========== */
+/**
+  |============================
+  | SECTION-2  "WORK"
+  |============================
+*/
+/* ========= "We doing",(3) (h2) ========== */
 
-.work {
-  --items: 3;
+/* Phone styles & Tablet styles & > */
+@media only screen and (min-width: 0px) {
+  .work {
+    display: none;
+  }
+}
+/* Desktop styles & > */
+@media only screen and (min-width: 1158px) {
+  .work {
+    display: block;
+    --items: 3;
+  }
 }
 
-.header-two {
+.header-h2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
