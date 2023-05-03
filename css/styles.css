@@ -58,23 +58,50 @@ body {
   background-color: var(--white-color);
 }
 
+/* Phone styles & > */
 .container {
-  width: 1158px;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding: 0px 15px;
+
   /*  контур елемента 
   outline: 2px solid red;
   outline-offset: -2px; */
 }
 
+/* Tablet styles & > */
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+/* Desktop styles & > */
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 1158px;
+    max-width: 1200px;
+
+    padding: 0px 15px;
+  }
+}
+
 img {
   display: block;
-  /* ширина вже задана в html */
-  /* max-width: 100%; */
-  /* вирівнювання по центру при любій ширині боксів  */
+  max-width: 100%;
+  height: auto;
+
   margin: auto;
+}
+
+button {
+  font-family: inherit;
+  color: currentColor;
+  cursor: pointer;
+}
+
+svg {
+  fill: currentColor;
 }
 
 /* для заголовків параметри */
