@@ -1,4 +1,7 @@
 :root {
+  /* Fonts */
+  --primary-font: 'Open Sans', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
   /* IRIS - logo, button color*/
   --btn-color: #4d5ae5;
   /* NAVY BLUE - hero background (bg), menu & headings fonts*/
@@ -50,7 +53,7 @@ ul {
 */
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--primary-font);
   color: var(--main-fonts);
   background-color: var(--white-color);
 }
@@ -268,7 +271,7 @@ address {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/page1/people-office.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
