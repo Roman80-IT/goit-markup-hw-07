@@ -58,29 +58,34 @@ body {
   background-color: var(--white-color);
 }
 
+section {
+  padding-bottom: 120px;
+}
+
 /* Phone styles & > */
 .container {
-  max-width: 100%;
+  min-width: 320px;
+  max-width: 428px;
+  /* max-width: 100%; */
   margin-left: auto;
   margin-right: auto;
-  padding: 0px 15px;
+  padding: 0px 16px;
 
-  /*  контур елемента 
+  /*  контур елемента */
   outline: 2px solid red;
-  outline-offset: -2px; */
+  outline-offset: -2px;
 }
 
 /* Tablet styles & > */
 @media only screen and (min-width: 768px) {
   .container {
-    max-width: 720px;
+    max-width: 768px;
   }
 }
 /* Desktop styles & > */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1158px) {
   .container {
-    width: 1158px;
-    max-width: 1200px;
+    max-width: 1158px;
 
     padding: 0px 15px;
   }
@@ -298,7 +303,7 @@ address {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/page1/people-office.jpg);
+    url(../images/page1/hero/bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -313,10 +318,6 @@ address {
   color: var(--white-color);
   margin: 0 auto 48px auto;
   max-width: 496px;
-}
-
-section {
-  padding-bottom: 120px;
 }
 
 /**
