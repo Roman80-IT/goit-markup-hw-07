@@ -709,6 +709,10 @@ address {
   flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
 
+.work-list-img {
+  width: 100%;
+}
+
 /* ========== SECTION-3 "Our Team" ========== */
 
 .team {
