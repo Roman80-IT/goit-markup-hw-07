@@ -85,7 +85,7 @@ section {
 /* Desktop styles & > */
 @media only screen and (min-width: 1158px) {
   .container {
-    max-width: 2158px;
+    max-width: 1158px;
 
     padding: 0px 15px;
   }
@@ -672,7 +672,7 @@ address {
 /* ========= "We doing",(3) (h2) ========== */
 
 /* Phone styles & Tablet styles & > */
-@media only screen and (max-width: 1157px) {
+@media only screen and (min-width: 0px) {
   .work {
     display: none;
   }
@@ -707,10 +707,6 @@ address {
 .work-list-item {
   /* calc((100% - 48px) / 3) */
   flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
-}
-
-.work-list-img {
-  width: 100%;
 }
 
 /* ========== SECTION-3 "Our Team" ========== */
