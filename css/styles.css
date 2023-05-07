@@ -26,6 +26,10 @@
 }
 /* width:/flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items)); */
 
+/* Phone styles (428 & >) */
+/* Tablet styles (768 & >) */
+/* Desktop styles (1158 & >) */
+
 /**
   |============================
   | RESET indents
@@ -62,7 +66,7 @@ section {
   padding-bottom: 120px;
 }
 
-/* Phone styles & > */
+/* Phone styles (428 & >) */
 .container {
   min-width: 320px;
   max-width: 428px;
@@ -76,13 +80,13 @@ section {
   outline-offset: -2px;
 }
 
-/* Tablet styles & > */
+/* Tablet styles (768 & >) */
 @media only screen and (min-width: 768px) {
   .container {
     max-width: 768px;
   }
 }
-/* Desktop styles & > */
+/* Desktop styles (1158 & >) */
 @media only screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
@@ -176,9 +180,10 @@ address {
   border-bottom: 1px solid var(--portfolio-bgc);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-  /*  контур елемента 
+
+  /*  контур елемента */
   outline: 2px solid red;
-  outline-offset: -2px; */
+  outline-offset: -2px;
 }
 
 .header-container {
@@ -187,6 +192,10 @@ address {
   /* justify-content: space-between; */
 }
 
+/* Phone styles (428 & >) */
+/* Tablet styles (768 & >) */
+/* Desktop styles (1158 & >) */
+
 .header-nav {
   display: flex;
   align-items: center;
@@ -194,7 +203,7 @@ address {
   /* margin-right: auto; */
 }
 
-.header-menu {
+.menu {
   display: flex;
   list-style: none;
   gap: 40px;
