@@ -189,12 +189,8 @@ address {
 .header-container {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
+  justify-content: space-between;
 }
-
-/* Phone styles (428 & >) */
-/* Tablet styles (768 & >) */
-/* Desktop styles (1158 & >) */
 
 .header-nav {
   display: flex;
@@ -203,10 +199,29 @@ address {
   /* margin-right: auto; */
 }
 
-.menu {
-  display: flex;
-  list-style: none;
-  gap: 40px;
+/* Desktop styles (1158 & >) */
+/* Phone styles (428 & >) */
+@media screen and (max-width: 767px) {
+  .header-box {
+    padding: 24px 0;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .contacts {
+    display: none;
+  }
+}
+
+/* Tablet styles (768 & >) */
+@media screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+  }
 }
 
 /* === LOGO === */
