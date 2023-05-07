@@ -199,10 +199,9 @@ address {
   /* margin-right: auto; */
 }
 
-/* Desktop styles (1158 & >) */
 /* Phone styles (428 & >) */
 @media screen and (max-width: 767px) {
-  .header-box {
+  .header-container {
     padding: 24px 0;
   }
 
@@ -222,7 +221,30 @@ address {
     list-style: none;
     gap: 40px;
   }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .contacts-link {
+    color: var(--main-fonts);
+    margin: 0;
+  }
 }
+
+/* Desktop styles (768 - 1157) */
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .contacts-item:first-child {
+    margin-bottom: 12px;
+  }
+
+  .contacts-link {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+
+/* Desktop styles (1158 & >) */
 
 /* === LOGO === */
 .logo {
