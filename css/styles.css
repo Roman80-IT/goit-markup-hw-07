@@ -672,11 +672,12 @@ address {
 /* ========= "We doing",(3) (h2) ========== */
 
 /* Phone styles & Tablet styles & > */
-@media only screen and (min-width: 0px) {
+@media only screen and (max-width: 1157px) {
   .work {
     display: none;
   }
 }
+
 /* Desktop styles & > */
 @media only screen and (min-width: 1158px) {
   .work {
