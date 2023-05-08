@@ -386,14 +386,13 @@ address {
 }
 
 .title {
+  font-family: inherit;
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
+
   letter-spacing: 0.02em;
   text-align: center;
+
   color: var(--white-color);
-  margin: 0 auto 48px auto;
-  max-width: 496px;
 }
 
 /* ==================== Adaptive ".container" (428, 768, 1158) ==================== */
@@ -422,34 +421,47 @@ address {
         url(../images/page1/hero/bg-mobile@2x.jpg);
     }
   }
+
+  .title {
+    font-size: 36px;
+    line-height: 1.11;
+    margin: 0 auto 72px auto;
+    width: 320px;
+  }
 }
 
-/* @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-  screen and (min-resolution: 192dpi) and (max-width: 767px),
-  screen and (min-resolution: 2dppx) and (max-width: 767px) {
-  .hero-section {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url('../images/hero/bg-mobile@2x.jpg');
-  }
-} */
-
-/* @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .section.hero {
-    background-image: linear-gradient(
-        to right,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/background/bg-img_sm-@2x.jpg);
-  }
-} */
-
 /* Tablet styles (768 & >) */
+
+@media screen and (min-width: 768px) {
+  .hero-bloc {
+    max-width: 768px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/page1/hero/bg-tablet.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-bloc {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/page1/hero/bg-tablet@2x.jpg);
+    }
+  }
+
+  .title {
+    font-size: 56px;
+    line-height: 1.07;
+    margin: 0 auto 48px auto;
+    width: 496px;
+  }
+}
+
 /* Desktop styles (1158 & >) */
 
 /**
