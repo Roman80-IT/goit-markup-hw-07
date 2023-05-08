@@ -399,6 +399,7 @@ address {
 /* Phone styles ( < 767 ) */
 @media screen and (max-width: 767px) {
   .hero-bloc {
+    max-width: 428px;
     padding-top: 112px;
     padding-bottom: 112px;
 
@@ -430,11 +431,24 @@ address {
   }
 }
 
-/* Tablet styles (768 & >) */
-
+/* Tablet & Desktop styles (768 & >) */
 @media screen and (min-width: 768px) {
+  .title {
+    font-size: 56px;
+    line-height: 1.07;
+    margin: 0 auto 48px auto;
+    width: 496px;
+  }
+}
+
+/* Tablet styles ( 768 - 1157 ) */
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
   .hero-bloc {
     max-width: 768px;
+    padding-top: 112px;
+    padding-bottom: 112px;
+
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -453,16 +467,35 @@ address {
         url(../images/page1/hero/bg-tablet@2x.jpg);
     }
   }
-
-  .title {
-    font-size: 56px;
-    line-height: 1.07;
-    margin: 0 auto 48px auto;
-    width: 496px;
-  }
 }
 
 /* Desktop styles (1158 & >) */
+
+@media screen and (min-width: 1158px) {
+  .hero-bloc {
+    max-width: 1440px;
+    padding-top: 188px;
+    padding-bottom: 188px;
+
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/page1/hero/bg.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-bloc {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/page1/hero/bg@2x.jpg);
+    }
+  }
+}
 
 /**
   |============================
