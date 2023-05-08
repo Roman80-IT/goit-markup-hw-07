@@ -214,7 +214,7 @@ address {
   }
 }
 
-/* Tablet styles (768 & >) */
+/* Tablet & Desktop styles (768 & >) */
 @media screen and (min-width: 768px) {
   .menu {
     display: flex;
@@ -232,7 +232,7 @@ address {
   }
 }
 
-/* Desktop styles (768 - 1157) */
+/* Tablet styles (768 - 1157) */
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .contacts-item:first-child {
     margin-bottom: 12px;
@@ -245,8 +245,16 @@ address {
 }
 
 /* Desktop styles (1158 & >) */
+@media screen and (min-width: 1158px) {
+  /* === Контакти (address) === */
+  .contacts-list {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+  }
+}
 
-/* === LOGO === */
+/* ======= LOGO ======= */
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
@@ -266,7 +274,7 @@ address {
   color: var(--heading-color);
 }
 
-/* === Навігація (Меню) === */
+/* ======= Навігація (Меню) ======= */
 .menu-link {
   position: relative;
   display: flex;
@@ -314,12 +322,6 @@ address {
 }
 
 /* === Контакти (address) === */
-.contacts-list {
-  list-style: none;
-  display: flex;
-  gap: 40px;
-}
-
 .contact-link {
   font-size: 16px;
   line-height: 1.5;
