@@ -82,7 +82,7 @@
     <symbol id="menu-btn" viewBox="0 0 47 32">
       <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.3636" d="M1.96 29.154h42.965M1.96 15.615h42.965M1.96 2.077h42.965"></path>
     </symbol>
-    <symbol id="icon-bars" viewBox="0 0 24 28">
+    <symbol id="menu-burger" viewBox="0 0 24 28">
       <path d="M24 21v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1zM24 13v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1zM24 5v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1z"></path>
     </symbol>
 
