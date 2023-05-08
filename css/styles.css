@@ -189,7 +189,6 @@ address {
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .header-nav {
@@ -217,9 +216,10 @@ address {
 
 /* ==================== Adaptive 428, 768, 1158 ==================== */
 
-/* Phone styles (428 & >) */
+/* Phone styles (428 - 767) */
 @media screen and (max-width: 767px) {
   .header-container {
+    justify-content: space-between;
     padding: 24px 0;
   }
 
@@ -234,10 +234,6 @@ address {
 
 /* Tablet & Desktop styles (768 & >) */
 @media screen and (min-width: 768px) {
-  .logo-header {
-    margin-right: 76px;
-  }
-
   .menu {
     display: flex;
     list-style: none;
@@ -292,7 +288,7 @@ address {
     color: var(--hover-btn);
   }
 
-  /* ======== Контакти ======== */
+  /* ======= Контакти (address) ======= */
 
   .contacts-list {
     list-style: none;
@@ -306,10 +302,24 @@ address {
   .menu-toggle {
     display: none;
   }
+
+  .contact-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    color: var(--main-fonts);
+
+    transition: color var(--anim-function);
+  }
 }
 
 /* Tablet styles (768 - 1157) */
 @media screen and (min-width: 768px) and (max-width: 1157px) {
+  .header-container {
+    justify-content: space-between;
+  }
+
   .contacts-item:first-child {
     margin-bottom: 12px;
   }
@@ -323,23 +333,14 @@ address {
 /* Desktop styles (1158 & >) */
 
 @media screen and (min-width: 1158px) {
-  /* === Контакти (address) === */
+  .logo-header {
+    margin-right: 76px;
+  }
 
   .contacts-list {
     display: flex;
     gap: 40px;
   }
-}
-
-/* === Контакти (address) === */
-.contact-link {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-
-  color: var(--main-fonts);
-
-  transition: color var(--anim-function);
 }
 
 /**
