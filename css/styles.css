@@ -542,7 +542,7 @@ address {
 */
 
 /* ========== SECTION-1 "FEATURE" (Переваги) ========== */
-/*  (h3 = header під "body") */
+/*  (h3 = header під стиль "body") */
 
 .section-delta {
   padding-top: 120px;
@@ -552,6 +552,10 @@ address {
 .feature-list {
   display: flex;
   flex-wrap: wrap;
+}
+
+.feature-item {
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
 
 .feature-icon-box {
@@ -566,19 +570,21 @@ address {
     --items: 1;
 
     gap: calc(3 * var(--indent));
+    /* calc (72px) / 1) */
   }
 
-  .feature-item {
-    /* calc (72px) / 1) */
-    flex-basis: calc(
-      (100% - var(--indent) * (var(--items) - 1)) / var(--items)
-    );
-  }
   /* .feature-item:not(:last-child) {
     margin-bottom: 72px;
   } */
 
-  .header {
+  .feature .header {
+    text-align: center;
+  }
+}
+
+/* Phone & Tablet styles ( 428 & 768 ) */
+@media screen and (max-width: 1157px) {
+  .feature .header {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -590,36 +596,33 @@ address {
   .feature-list {
     --items: 2;
 
+    /* вертикальні і горизонтальні відступи */
     gap: calc(var(--indent) * 3) var(--indent);
   }
 
-  .feature-item {
-    /* calc (24px-72px) / 2) */
+  /* .feature-item {
+    /* calc (24px-72px) / 2) 
     flex-basis: calc(
       (100% - var(--indent) * (var(--items) - 1)) / var(--items)
     );
-  }
-
-  .feature-header {
-    text-align: left;
-  }
+  } */
 }
 
 /* Desktop styles ( 1158 & > ) */
 @media screen and (min-width: 1158px) {
   .feature-list {
-    --items: 4;
+    /* --items: 4; */
 
     justify-content: space-between;
     /* gap: var(--indent); */
   }
 
-  .feature-item {
-    /* calc (24px) / 4 ) */
+  /*.feature-item {
+     calc (24px) / 4 ) 
     flex-basis: calc(
       (100% - var(--indent) * (var(--items) - 1)) / var(--items)
     );
-  }
+  }*/
 
   .feature-icon-box {
     display: flex;
@@ -668,32 +671,30 @@ address {
     display: block;
     --items: 3;
   }
-}
 
-.header-h2 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-align: center;
-  text-transform: capitalize;
-  color: var(--heading-color);
-  margin-bottom: 72px;
-}
+  .header-h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--heading-color);
+    margin-bottom: 72px;
+  }
 
-.work-list {
-  display: flex;
-  gap: var(--indent);
-  /* ЕКСПЕРИМЕНТ =======================================================*/
-  /* justify-content: center; */
-  /* justify-content: space-between; */
-}
+  .work-list {
+    display: flex;
+    gap: var(--indent);
+  }
 
-.work-list-item {
-  /* calc((100% - 48px) / 3) */
-  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+  .work-list-item {
+    /* calc((100% - 48px) / 3) */
+    flex-basis: calc(
+      (100% - var(--indent) * (var(--items) - 1)) / var(--items)
+    );
+  }
 }
-
 /* ========== SECTION-3 "Our Team" ========== */
 
 .team {
@@ -1396,6 +1397,12 @@ address {
   | Mobile menu
   |============================
 */
+
+/* .mobile-menu-container.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+} */
 
 @media screen and (max-width: 767px) {
   .mobile-menu-container {
