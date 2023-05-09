@@ -783,7 +783,7 @@ address {
   fill: var(--light-font);
 }
 
-/* ==================== Adaptive ".container" (428, 768, 1158) ==================== */
+/* ==================== Adaptive "TEAM" (428, 768, 1158) ==================== */
 /* Phone styles (428 & >) */
 @media screen and (max-width: 767px) {
   .team-item {
@@ -823,20 +823,18 @@ address {
   | SECTION-4  CUSTOMERS
   |============================
 */
-/* ========== "Customers" ========== */
+/* ========== "Customers" (Clients) ========== */
 
 .clients-list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: var(--indent);
-  --items: 6;
+  /* justify-content: space-between; */
 }
 
 .clients-item {
-  /* width: 168px; */
-  /* display: flex; - не треба! */
-  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
   height: 88px;
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
 
 .clients-link {
@@ -870,6 +868,46 @@ address {
 .clients-icon:focus {
   fill: currentColor;
 } */
+
+/* ==================== Adaptive "CUSTOMERS" (Clients) (428, 768, 1158) ==================== */
+/* Phone styles ( 428 - 767 ) */
+/* items width: 190px; */
+@media screen and (max-width: 767px) {
+  .clients-list {
+    --items: 2;
+    --indent: 16px;
+
+    column-gap: var(--indent);
+    row-gap: 72px;
+  }
+}
+
+/* Tablet styles ( 768 - 1157 ) */
+/* items width: 168px; */
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .customers-container {
+    width: 582px;
+  }
+
+  .clients-list {
+    --items: 3;
+    --indent: 24px;
+
+    column-gap: var(--indent);
+    row-gap: 72px;
+  }
+}
+
+/* Desktop styles (1158 & >) */
+/* items width: 168px; */
+@media screen and (min-width: 1158px) {
+  .clients-list {
+    --items: 6;
+    --indent: 24px;
+
+    column-gap: var(--indent);
+  }
+}
 
 /**
   |============================
