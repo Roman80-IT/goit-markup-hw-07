@@ -658,6 +658,17 @@ address {
 */
 /* ========= WORK "We doing", (h2) ========== */
 
+.header-h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--heading-color);
+  margin-bottom: 72px;
+}
+
 /* ==================== Adaptive ".container" (428, 768, 1158) ==================== */
 /* Phone styles & Tablet styles ( 428 & 768 > ) */
 @media only screen and (max-width: 1157px) {
@@ -673,17 +684,6 @@ address {
     --items: 3;
   }
 
-  .header-h2 {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-align: center;
-    text-transform: capitalize;
-    color: var(--heading-color);
-    margin-bottom: 72px;
-  }
-
   .work-list {
     display: flex;
     gap: var(--indent);
@@ -696,7 +696,14 @@ address {
     );
   }
 }
-/* ========== SECTION-3 "Our Team" ========== */
+
+/**
+  |============================
+  | SECTION-3  TEAM
+  |============================
+*/
+/* ========== "Our Team" ========== */
+/* Розміщенння картинок через 'column-gap:' та 'row-gap:' , вирівнювання маржинами */
 
 .team {
   /* Кожне Слово З Великої Літери */
@@ -705,27 +712,26 @@ address {
   --items: 4;
 }
 
+/* 
 .team-list {
   display: flex;
   gap: var(--indent);
 
   /* приклади list-style: */
-  /* list-style-type: '\1F44D'; */
-  /* list-style-type: space-counter; */
-  /* list-style-type: none; */
+/* list-style-type: '\1F44D'; */
+/* list-style-type: space-counter; */
+/* list-style-type: none; 
 }
+*/
 
-.team-items {
-  /* calc((100% - 72px) / 4) */
-  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+.team-item {
+  /* flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));*/
 
-  /* ЕКСПЕРИМЕНТ =======================================================*/
   /* маржинами картинку не вирівняти - потрібно на його "div" впливати?
   margin-left: auto;
   margin-right: auto; */
   border: var(--portfolio-bgc);
-  /* border-width:  1px;
-  border-style: solid; */
+
   /* Тінь навколо ракмок: */
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -777,7 +783,47 @@ address {
   fill: var(--light-font);
 }
 
-/* ========== SECTION-4 "Customers" ========== */
+/* ==================== Adaptive ".container" (428, 768, 1158) ==================== */
+/* Phone styles (428 & >) */
+@media screen and (max-width: 767px) {
+  .team-item {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .team-item:not(:last-child) {
+    margin-bottom: 72px;
+  }
+}
+
+/* Tablet styles (768 & >) */
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 64px;
+    align-items: center;
+  }
+}
+
+/* Desktop styles (1158 & >) */
+@media screen and (min-width: 1158px) {
+  .team-item {
+    /* width: calc((100% - 72px) / 4); */
+    flex-basis: calc(
+      (100% - var(--indent) * (var(--items) - 1)) / var(--items)
+    );
+  }
+}
+
+/**
+  |============================
+  | SECTION-4  CUSTOMERS
+  |============================
+*/
+/* ========== "Customers" ========== */
 
 .clients-list {
   display: flex;
