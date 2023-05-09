@@ -656,16 +656,17 @@ address {
   | SECTION-2  "WORK"
   |============================
 */
-/* ========= "We doing",(3) (h2) ========== */
+/* ========= WORK "We doing", (h2) ========== */
 
-/* Phone styles & Tablet styles & > */
+/* ==================== Adaptive ".container" (428, 768, 1158) ==================== */
+/* Phone styles & Tablet styles ( 428 & 768 > ) */
 @media only screen and (max-width: 1157px) {
   .work {
     display: none;
   }
 }
 
-/* Desktop styles & > */
+/* Desktop styles ( 1158 & > ) */
 @media only screen and (min-width: 1158px) {
   .work {
     display: block;
@@ -688,8 +689,8 @@ address {
     gap: var(--indent);
   }
 
-  .work-list-item {
-    /* calc((100% - 48px) / 3) */
+  .work-item {
+    /* calc ( 24px ) / 3 ) */
     flex-basis: calc(
       (100% - var(--indent) * (var(--items) - 1)) / var(--items)
     );
