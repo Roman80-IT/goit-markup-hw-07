@@ -1005,13 +1005,13 @@ address {
 
 .subscribe-label {
   display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
 }
 
 .subscribe-email {
-  /* width: 100%; */
   flex-basis: 100%;
-  /* height: 40px;
-  padding-left: 16px; */
+  /* height: 40px; */
 
   margin-bottom: 16px;
   padding: 8px 16px;
