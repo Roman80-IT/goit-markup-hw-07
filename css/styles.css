@@ -1641,11 +1641,14 @@ address {
     position: fixed;
     top: 0;
     left: 0;
+
     width: 100%;
     height: 100%;
+
     padding: 80px 40px 40px 40px;
     background-color: var(--white-color);
     z-index: 999;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1662,10 +1665,13 @@ address {
     display: flex;
     justify-content: center;
     align-items: center;
+
     right: 0;
     top: 0;
+
     width: 24px;
     height: 24px;
+
     margin-right: 20px;
     margin-top: 28px;
 
@@ -1681,7 +1687,11 @@ address {
     fill: currentColor;
   }
 
-  .mobile-menu-item:not(:last-child) {
+  /* .mobile-menu-item:not(:last-child) {
+    margin-bottom: 40px;
+  } */
+
+  .mobile-menu-item {
     margin-bottom: 40px;
   }
 
@@ -1733,6 +1743,18 @@ address {
   .mobile-menu-container .social-list {
     gap: 24px;
   }
+}
+
+@media screen and (orientation: landscape) {
+  .mobile-menu-container {
+    /* overflow: auto; */
+    overflow: scroll;
+  }
+
+  /* .modal {
+    top: 0;
+    transform: translate(-50%, 0%);
+  } */
 }
 
 /* Tablet & Desktop styles (768 & >) */
