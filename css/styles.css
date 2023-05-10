@@ -1084,6 +1084,11 @@ address {
     row-gap: 72px;
   }
 
+  .logo-footer {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   /* Subscribe  */
   .subscribe {
     display: flex;
@@ -1396,6 +1401,9 @@ address {
   cursor: pointer;
 }
 
+/* ==================== Adaptive ".modal" (428, 768, 1158) ==================== */
+/* Phone styles (428 & >) */
+
 @media screen and (min-width: 428px) {
   .modal {
     width: 392px;
@@ -1414,7 +1422,8 @@ address {
 
 @media screen and (orientation: landscape) {
   .backdrop {
-    overflow: auto;
+    /* overflow: auto; */
+    overflow: scroll;
   }
 
   .modal {
@@ -1423,6 +1432,7 @@ address {
   }
 }
 
+/* Tablet styles (768 & >) */
 @media screen and (min-width: 768px) {
   .modal {
     width: 408px;
