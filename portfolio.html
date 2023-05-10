@@ -18,22 +18,23 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- Шапка сайта -->
-
+    <!-- ======== HEADER (Шапка сайта) ========== -->
     <header class="header-box">
-      <div class="container header-container">
-        <nav class="header-nav">
-          <a class="logo logo-header" href="./index.html"
-            >Web<span class="logo-studio">Studio</span></a
-          >
+      <div class="header-container container">
+        <a class="logo logo-header" href="./index.html"
+          >Web<span class="logo-studio">Studio</span></a
+        >
 
+        <nav class="header-nav">
           <ul class="menu">
             <li>
-              <a class="menu-link menu-font" href="./index.html">Studio</a>
+              <!-- active -->
+              <a class="menu-link menu-font active" href="./index.html"
+                >Studio</a
+              >
             </li>
             <li>
-              <!-- active page -->
-              <a class="menu-link menu-font active" href="./portfolio.html"
+              <a class="menu-link menu-font" href="./portfolio.html"
                 >Portfolio</a
               >
             </li>
@@ -43,24 +44,41 @@
           </ul>
         </nav>
 
-        <address>
-          <ul class="contacts-list">
-            <li>
-              <a class="contact-link link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a class="contact-link link" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-        </address>
+        <!-- === Контакти (address) === -->
+        <div class="contacts-box">
+          <address class="contacts">
+            <ul class="contacts-list">
+              <li>
+                <a class="contact-link link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="contact-link link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <!-- Бургер-кнопка-меню -->
+
+        <button
+          class="menu-toggle js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="burger-icon" width="32" height="32">
+            <use class="" href="./images/icons.svg#menu-burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
     <main>
+      <!-- PORTFOLIO -->
       <section class="container-portfolio">
         <div class="container">
           <!-- === Кнопки-фільтр === -->
@@ -321,7 +339,7 @@
           </p>
         </div>
 
-        <!-- social-box -->
+        <!-- Social media -->
         <div class="footer-social-box">
           <p class="footer-social-title menu-font">Social media</p>
           <ul class="footer-list list">
