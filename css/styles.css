@@ -1247,7 +1247,7 @@ address {
   outline-offset: -2px; */
 }
 
-.list-menu-prtf {
+.portfolio-menu-list {
   list-style: none;
   text-decoration: none;
   display: flex;
@@ -1288,10 +1288,10 @@ address {
 }
 
 /* ==================== Adaptive ".container" (428, 768, 1158) ==================== */
-/* Phone styles (428 & >) */
 
+/* Phone styles (428 & >) */
 @media screen and (max-width: 767px) {
-  .portfolio-menu {
+  .portfolio-menu-list {
     max-width: 280px;
   }
 
