@@ -305,7 +305,7 @@ address {
     list-style: none;
   }
 
-  .contacts-link {
+  .contact-link {
     color: var(--main-fonts);
     margin: 0;
   }
@@ -335,7 +335,7 @@ address {
     margin-bottom: 12px;
   }
 
-  .contacts-link {
+  .contact-link {
     font-size: 12px;
     line-height: 1.17;
   }
