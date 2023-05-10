@@ -1,6 +1,6 @@
 :root {
   /* Fonts */
-  --primary-font: 'Open Sans', sans-serif;
+  --primary-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
   /* IRIS - logo, button color*/
   --btn-color: #4d5ae5;
@@ -67,6 +67,25 @@ section {
   padding-bottom: 120px;
 }
 
+/* для заголовків параметри */
+.header {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--heading-color);
+  margin-bottom: 8px;
+}
+
+.main-text {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--main-fonts);
+}
+
 /* ==================== Adaptive ".container" (428, 768, 1158) ==================== */
 
 /* Phone styles (428 & >) */
@@ -89,6 +108,7 @@ section {
     max-width: 768px;
   }
 }
+
 /* Desktop styles (1158 & >) */
 @media only screen and (min-width: 1158px) {
   .container {
@@ -114,24 +134,6 @@ button {
 
 svg {
   fill: currentColor;
-}
-
-/* для заголовків параметри */
-.header {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--heading-color);
-  margin-bottom: 8px;
-}
-
-.main-text {
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--main-fonts);
 }
 
 /**
