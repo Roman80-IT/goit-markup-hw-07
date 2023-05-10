@@ -931,11 +931,15 @@ address {
 }
 
 .text-footer {
+  max-width: 264px;
+
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+
+  text-align: start;
+
   color: var(--light-font);
-  max-width: 264px;
 }
 
 /* social-box  */
@@ -1098,6 +1102,7 @@ address {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    flex-basis: 100%;
     /* row-gap: 16px; */
   }
 
