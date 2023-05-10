@@ -1234,6 +1234,11 @@ address {
   | PAGE2 - PORTFOLIO
   |============================
 */
+/**
+  |============================
+  | Menu PORTFOLIO
+  |============================
+*/
 
 .container-portfolio {
   padding: 96px 0 120px;
@@ -1282,9 +1287,79 @@ address {
   /* border: 1px solid var(--hover-btn); */
 }
 
+/* ==================== Adaptive ".container" (428, 768, 1158) ==================== */
+/* Phone styles (428 & >) */
+
+@media screen and (max-width: 767px) {
+  .portfolio-menu {
+    max-width: 280px;
+  }
+
+  .portfolio-item {
+    margin-bottom: 48px;
+  }
+
+  .portfolio-item-img {
+    width: 396px;
+    height: 280px;
+  }
+}
+
+/* Tablet styles (768 & >) */
+@media screen and (min-width: 768px) {
+  .portfolio-section {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+
+  .portfolio-menu {
+    margin-bottom: 64px;
+  }
+
+  .portfolio-list {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .portfolio-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+  .portfolio-item-img {
+    width: 356px;
+    height: 300px;
+  }
+}
+
+/* Desktop styles (1158 & >) */
+@media screen and (min-width: 1158px) {
+  .portfolio-section {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+
+  .portfolio-menu {
+    margin-bottom: 72px;
+  }
+
+  .portfolio-list {
+    row-gap: 24px;
+  }
+
+  .portfolio-item {
+    flex-basis: calc((100% - 48px) / 3);
+  }
+  .portfolio-item-img {
+    width: 360px;
+    height: 300px;
+  }
+}
+
 /**
   |============================
-  | Картки Portfolio 
+  | Картки PORTFOLIO
   |============================
 */
 
