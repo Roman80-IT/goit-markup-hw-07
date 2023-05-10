@@ -399,6 +399,8 @@ address {
 @media screen and (max-width: 767px) {
   .hero-bloc {
     max-width: 428px;
+    /* min-width: 320px; */
+    /* width: 100%; */
 
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -424,6 +426,7 @@ address {
     font-size: 36px;
     line-height: 1.11;
     margin: 0 auto 72px auto;
+    width: 320px;
   }
 }
 
@@ -703,19 +706,19 @@ address {
   /* Кожне Слово З Великої Літери */
   text-transform: capitalize;
   background-color: var(--light-font);
-  --items: 4;
 }
 
-/* 
 .team-list {
   display: flex;
+  flex-wrap: wrap;
   gap: var(--indent);
+}
 
-  /* приклади list-style: */
+/* приклади list-style: */
 /* list-style-type: '\1F44D'; */
 /* list-style-type: space-counter; */
 /* list-style-type: none; 
-}
+
 */
 
 .team-item {
@@ -780,32 +783,55 @@ address {
 /* ==================== Adaptive "TEAM" (428, 768, 1158) ==================== */
 /* Phone styles (428 & >) */
 @media screen and (max-width: 767px) {
+  .team {
+    padding: 0 40px;
+  }
+
+  .team-list {
+    --items: 1;
+  }
+
   .team-item {
     margin-left: auto;
     margin-right: auto;
+
+    flex-basis: calc(
+      (100% - var(--indent) * (var(--items) - 1)) / var(--items)
+    );
   }
 
   .team-item:not(:last-child) {
     margin-bottom: 72px;
+  }
+
+  .img {
+    width: 100%;
   }
 }
 
 /* Tablet styles (768 & >) */
 @media screen and (min-width: 768px) {
   .team-list {
+    --items: 2;
+
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 64px;
+
     align-items: center;
   }
 }
 
 /* Desktop styles (1158 & >) */
 @media screen and (min-width: 1158px) {
+  .team-list {
+    --items: 4;
+  }
+
   .team-item {
-    /* width: calc((100% - 72px) / 4); */
+    /* calc (72px) / 4); */
     flex-basis: calc(
       (100% - var(--indent) * (var(--items) - 1)) / var(--items)
     );
