@@ -1328,7 +1328,9 @@ address {
     padding-bottom: 96px;
   }
 
-  .portfolio-menu {
+  .portfolio-menu-list {
+    justify-content: center;
+
     margin-bottom: 64px;
   }
 

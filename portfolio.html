@@ -117,15 +117,41 @@
 
           <!-- ================ Картки Portfolio ================ -->
 
-          <ul class="portfolio-list">
+          <ul class="portfolio-list list">
             <li class="portfolio-item">
-              <a class="portfolio-link link" href="">
-                <div class="box-overlay">
-                  <img
-                    src="./images/page2/pagetoo1.jpg"
-                    alt="Banking App Interface Concept"
-                    width="360"
-                  />
+              <a class="portfolio-item-link link" href="">
+                <div class="portfolio-item-img-wrapper box-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/page2/img-1.jpg    1x,
+                        ./images/page2/img-1@2x.jpg 2x
+                      "
+                      media="(min-width:1158px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/page2/img-tablet-1.jpg    1x,
+                        ./images/page2/img-tablet-1@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/page2/img-mobile-1.jpg    1x,
+                        ./images/page2/img-mobile-1@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      class="portfolio-item-img"
+                      src="./images/page2/img-1.jpg"
+                      alt="Banking App Interface Concept"
+                      width="360"
+                      loading="lazy"
+                    />
+                  </picture>
+
                   <div class="overlay">
                     <p>
                       14 Stylish and User-Friendly App Design Concepts · Task
