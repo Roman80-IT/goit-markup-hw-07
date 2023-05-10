@@ -73,7 +73,7 @@ section {
 .container {
   min-width: 320px;
   max-width: 428px;
-  /* max-width: 100%; */
+
   margin-left: auto;
   margin-right: auto;
   padding: 0px 16px;
@@ -169,7 +169,6 @@ svg {
 /* для прибирання курсиву */
 address {
   font-style: inherit;
-  /* margin-left: auto; */
 }
 
 /**
@@ -197,8 +196,6 @@ address {
 .header-nav {
   display: flex;
   align-items: center;
-  /* flex-grow: 1; */
-  /* margin-right: auto; */
 }
 
 /* ======= LOGO ======= */
@@ -1397,6 +1394,40 @@ address {
   background-color: var(--hover-btn);
   color: var(--light-font);
   cursor: pointer;
+}
+
+@media screen and (min-width: 428px) {
+  .modal {
+    width: 392px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+
+  .is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .backdrop {
+    overflow: auto;
+  }
+
+  .modal {
+    top: 0;
+    transform: translate(-50%, 0%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 408px;
+    padding: 72px 24px 24px 24px;
+  }
 }
 
 /* ======== Modal forms ======== */
