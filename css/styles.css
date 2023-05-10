@@ -390,13 +390,11 @@ address {
   color: var(--white-color);
 }
 
-/* ==================== Adaptive ".container" (428, 768, 1158) ==================== */
+/* ====================== Adaptive "HERO section" (428, 768, 1158) ====================== */
 /* Phone styles ( < 767 ) */
 @media screen and (max-width: 767px) {
   .hero-bloc {
     max-width: 428px;
-    padding-top: 112px;
-    padding-bottom: 112px;
 
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -440,8 +438,6 @@ address {
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .hero-bloc {
     max-width: 768px;
-    padding-top: 112px;
-    padding-bottom: 112px;
 
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
