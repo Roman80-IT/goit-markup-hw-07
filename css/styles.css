@@ -249,6 +249,10 @@ address {
     padding: 0;
     line-height: 0; */
   }
+
+  .burger-icon {
+    stroke: #2e2f42;
+  }
 }
 
 /* Tablet & Desktop styles (768 & >) */
