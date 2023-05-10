@@ -745,12 +745,12 @@ address {
 
 /* === social icons === */
 
-.social-icon-list {
+.social-list {
   display: flex;
   justify-content: center;
   gap: var(--indent);
 }
-.social-icon-item {
+.social-item {
   width: 40px;
   height: 40px;
 }
@@ -1635,6 +1635,7 @@ address {
   |============================
 */
 
+/* Phone styles (428 & >) */
 @media screen and (max-width: 767px) {
   .mobile-menu-container {
     position: fixed;
@@ -1734,6 +1735,7 @@ address {
   }
 }
 
+/* Tablet & Desktop styles (768 & >) */
 @media screen and (min-width: 768px) {
   .mobile-menu-container {
     display: none;
