@@ -1352,7 +1352,7 @@ address {
 
 .modal {
   position: absolute;
-  top: 33%;
+  top: 50%;
   left: 50%;
 
   /* transform: translate(-50%, -50%); */
@@ -1436,22 +1436,41 @@ address {
 }
 
 @media screen and (orientation: landscape) {
-  .backdrop {
-    /* overflow: auto; */
+  /* .backdrop {
+    /* overflow: auto; 
     overflow: scroll;
-  }
+  } */
 
   .modal {
-    top: 0;
-    transform: translate(-70%, 0%);
+    top: 50%;
+    transform: translate(-50%, -30%);
+    overflow: scroll;
   }
 }
 
-/* Tablet styles (768 & >) */
+/* Tablet & Desktop styles (768 & >) */
 @media screen and (min-width: 768px) {
   .modal {
     width: 408px;
     padding: 72px 24px 24px 24px;
+  }
+}
+
+/* Tablet styles ( 768 - 1157 ) */
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .modal {
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+/* Desktop styles (1158 & >) */
+@media screen and (min-width: 1158px) {
+  .modal {
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
   }
 }
 
