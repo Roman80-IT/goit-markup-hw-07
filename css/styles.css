@@ -580,7 +580,7 @@ address {
   display: none;
 }
 
-/* ==================== Adaptive "FEATURE" (428, 768, 1158) ==================== */
+/* ======================== Adaptive "FEATURE" (428, 768, 1158) ======================= */
 
 /* Phone styles ( & > 428 - 767 ) */
 @media screen and (max-width: 767px) {
@@ -606,6 +606,10 @@ address {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
+  }
+
+  .feature .main-text {
+    font-weight: 500;
   }
 }
 
