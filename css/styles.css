@@ -225,7 +225,7 @@ address {
   letter-spacing: 0.02em;
 }
 
-/* ==================== Adaptive HEADER (428, 768, 1158) ==================== */
+/* ============================ Adaptive HEADER (428, 768, 1158) ========================= */
 
 /* Phone styles (428 - 767) */
 @media screen and (max-width: 767px) {
@@ -327,18 +327,39 @@ address {
 
 /* Tablet styles (768 - 1157) */
 @media screen and (min-width: 768px) and (max-width: 1157px) {
-  .header-container {
-    justify-content: space-between;
+  .contacts-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 12px;
+    width: 119px;
+    align-items: center;
   }
 
-  .contacts-item:first-child {
-    margin-bottom: 12px;
+  .header-container {
+    justify-content: space-between;
   }
 
   .contact-link {
     font-size: 12px;
     line-height: 1.17;
+    /* margin-bottom: 0; */
   }
+
+  /* .contact-link.link {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 12px;
+    /* align-items: center; */
+  /* margin-bottom: 0; */
+  /* } */
+
+  /* .contact-link.link {
+    margin-bottom: 0;
+  } */
+  /* .contact-link.link:first-child {
+    display: inline-block;
+    margin-bottom: 12px;
+  } */
 }
 
 /* Desktop styles (1158 & >) */
