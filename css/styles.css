@@ -1248,12 +1248,16 @@ address {
 }
 
 .portfolio-menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
   list-style: none;
   text-decoration: none;
-  display: flex;
-  justify-content: center;
-  gap: var(--indent);
-  margin-bottom: 72px;
+
+  column-gap: var(--indent);
+  row-gap: 16px;
+  margin-bottom: 48px;
 }
 
 /* ========== BUTTON STYLE (Кнопки-фільтр) ========== */
@@ -1293,6 +1297,18 @@ address {
 @media screen and (max-width: 767px) {
   .portfolio-menu-list {
     max-width: 280px;
+    /* max-width: 100%; */
+  }
+
+  .portfolio-menu-item {
+    /* flex-basis: calc(
+      (100% - var(--indent) * (var(--items) - 1)) / var(--items)
+    ); */
+    /* margin-right: 24px; */
+  }
+
+  .filter-button {
+    padding: 8px 16px;
   }
 
   .portfolio-item {
