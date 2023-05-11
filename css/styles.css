@@ -1332,7 +1332,7 @@ address {
 /* Desktop styles (1158 & >) */
 @media screen and (min-width: 1158px) {
   .portfolio {
-    padding-top: 100px;
+    padding-top: 96px;
     padding-bottom: 120px;
   }
 
