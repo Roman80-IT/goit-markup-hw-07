@@ -90,7 +90,7 @@ section {
 
 /* Phone styles (428 & >) */
 .container {
-  min-width: 300px;
+  min-width: 280px;
   max-width: 428px;
 
   margin-left: auto;
@@ -437,12 +437,46 @@ address {
 }
 
 /* ====================== Adaptive "HERO section" (428, 768, 1158) ====================== */
+@media screen and (max-width: 325px) {
+  .hero-bloc {
+    max-width: 428px;
+    width: 100%;
+
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/page1/hero/bg-mobile.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-bloc {
+      background-image: linear-gradient(
+          to right,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/page1/hero/bg-mobile@2x.jpg);
+    }
+  }
+
+  .hero-bloc .title {
+    max-width: 280px;
+    width: 100%;
+
+    font-size: 34px;
+    line-height: 1.11;
+
+    margin: 0 auto 72px auto;
+  }
+}
+
 /* Phone styles ( < 767 ) */
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 325px) and (max-width: 767px) {
   .hero-bloc {
     /* display: none; */
-    /* display: flex;
-    flex-basis: 100%; */
 
     max-width: 428px;
     min-width: 300px;
@@ -470,8 +504,11 @@ address {
 
   .hero-bloc .title {
     max-width: 320px;
+    width: 100%;
+
     font-size: 36px;
     line-height: 1.11;
+
     margin: 0 auto 72px auto;
   }
 }
