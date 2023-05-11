@@ -130,6 +130,10 @@ img {
   margin: auto;
 }
 
+.img {
+  width: 100%;
+}
+
 button {
   font-family: inherit;
   color: currentColor;
@@ -731,6 +735,9 @@ address {
 */
 /* ========== "Our Team" ========== */
 /* Розміщенння картинок через 'column-gap:' та 'row-gap:' , вирівнювання маржинами */
+/* маржинами картинку не вирівняти - потрібно на його "div" впливати
+  margin-left: auto;
+  margin-right: auto; */
 
 .team {
   /* Кожне Слово З Великої Літери */
@@ -741,7 +748,11 @@ address {
 .team-list {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--indent);
+
+  justify-content: center;
+  align-items: center;
+
+  column-gap: var(--indent);
 }
 
 /* приклади list-style: */
@@ -752,11 +763,8 @@ address {
 */
 
 .team-item {
-  /* flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));*/
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 
-  /* маржинами картинку не вирівняти - потрібно на його "div" впливати?
-  margin-left: auto;
-  margin-right: auto; */
   border: var(--portfolio-bgc);
 
   /* Тінь навколо ракмок: */
@@ -812,62 +820,49 @@ address {
 
 /* ==================== Adaptive "TEAM" (428, 768, 1158) ==================== */
 /* Phone styles (428 & >) */
+/* .footer-section .container {
+  } */
 @media screen and (max-width: 767px) {
   .team-list {
     --items: 1;
     padding-left: calc(100% * 0.03);
     padding-right: calc(100% * 0.03);
+
+    row-gap: 72px;
   }
 
-  /* .footer-section .container {
-  } */
-
   .team-item {
-    margin-left: auto;
-    margin-right: auto;
-
-    flex-basis: calc(
-      (100% - var(--indent) * (var(--items) - 1)) / var(--items)
-    );
     /* max-width: 264px;
     width: 100%; */
   }
 
-  .team-item:not(:last-child) {
+  /* .team-item:not(:last-child) {
     margin-bottom: 72px;
-  }
-
-  .img {
-    width: 100%;
-  }
+  } */
 }
 
 /* Tablet styles (768 & >) */
 @media screen and (min-width: 768px) {
+  /* .team .container {
+    max-width: 660px;
+  } */
+
   .team-list {
     --items: 2;
 
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    column-gap: 24px;
     row-gap: 64px;
-
-    align-items: center;
   }
+  /*.team-item {
+     max-width: 264px;
+    width: 100%; 
+  }*/
 }
 
 /* Desktop styles (1158 & >) */
 @media screen and (min-width: 1158px) {
   .team-list {
-    --items: 4;
-  }
-
-  .team-item {
     /* calc (72px) / 4); */
-    flex-basis: calc(
-      (100% - var(--indent) * (var(--items) - 1)) / var(--items)
-    );
+    --items: 4;
   }
 }
 
