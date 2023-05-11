@@ -1309,17 +1309,6 @@ address {
   .filter-button {
     padding: 8px 16px;
   }
-
-  /* ==================== Adaptive PORTFOLIO ==================== */
-
-  /* .portfolio-item {
-    margin-bottom: 48px;
-  } */
-
-  /* .portfolio-item-img {
-    width: 396px;
-    height: 280px;
-  } */
 }
 
 /* Tablet styles (768 & >) */
@@ -1334,18 +1323,6 @@ address {
 
     margin-bottom: 64px;
   }
-
-  /* ==================== Adaptive PORTFOLIO ==================== */
-  .portfolio-list {
-    --items: 2;
-
-    row-gap: calc(var(--indent) * 3);
-  }
-
-  /* .portfolio-item-img {
-    width: 356px;
-    height: 300px;
-  } */
 }
 
 /* Desktop styles (1158 & >) */
@@ -1445,6 +1422,48 @@ address {
 }
 .overlay p {
   color: var(--light-font);
+}
+
+/* ==================== Adaptive "Menu PORTFOLIO" (428, 768, 1158) ==================== */
+
+/* Phone styles (428 & >) */
+
+@media screen and (max-width: 767px) {
+  /* .portfolio-item {
+    margin-bottom: 48px;
+  } */
+
+  /* .portfolio-item-img {
+    width: 396px;
+    height: 280px;
+  } */
+}
+
+/* Tablet styles (768 & >) */
+
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    --items: 2;
+
+    row-gap: calc(var(--indent) * 3);
+  }
+
+  /* .portfolio-item-img {
+    width: 356px;
+    height: 300px;
+  } */
+}
+
+/* Desktop styles (1158 & >) */
+@media screen and (min-width: 1158px) {
+  .portfolio-list {
+    --items: 3;
+  }
+
+  /* .portfolio-item-img {
+    width: 360px;
+    height: 300px;
+  } */
 }
 
 /**
