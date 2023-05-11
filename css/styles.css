@@ -337,6 +337,10 @@ address {
   }
 }
 
+/* .header-box {
+  display: none;
+} */
+
 /* Tablet styles (768 - 1157) */
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .contacts-list {
@@ -435,6 +439,7 @@ address {
 /* Phone styles ( < 767 ) */
 @media screen and (max-width: 767px) {
   .hero-bloc {
+    /* display: none; */
     /* display: flex;
     flex-basis: 100%; */
 
@@ -601,7 +606,12 @@ address {
 /* ======================== Adaptive "FEATURE" (428, 768, 1158) ======================= */
 
 /* Phone styles ( & > 428 - 767 ) */
+
 @media screen and (max-width: 767px) {
+  /* .feature {
+    display: none;
+  } */
+
   .feature-list {
     --items: 1;
 
@@ -823,6 +833,10 @@ address {
 /* .footer-section .container {
   } */
 @media screen and (max-width: 767px) {
+  /* .team {
+    display: none;
+  } */
+
   .team-list {
     --items: 1;
     padding-left: calc(100% * 0.03);
@@ -872,6 +886,10 @@ address {
   |============================
 */
 /* ========== "Customers" (Clients) ========== */
+
+/* .section-delta {
+  display: none;
+} */
 
 .clients-list {
   display: flex;
@@ -1133,6 +1151,7 @@ address {
 /* Phone styles ( 428 - 767 ) */
 @media screen and (max-width: 767px) {
   .footer-section .container {
+    /* display: none; */
     flex-wrap: wrap;
     justify-content: center;
 
