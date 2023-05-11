@@ -1120,7 +1120,6 @@ address {
 .subscribe-btn {
   display: flex;
   align-items: center;
-  /* display: block; */
   /* display: inline-flex; */
   /* flex-direction: row;
   justify-content: center; */
@@ -1193,8 +1192,6 @@ address {
 
   .footer-section .container {
     width: 582px;
-    /* padding-left: 108px;
-    padding-right: 108px; */
 
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -1242,8 +1239,8 @@ address {
   |============================
 */
 
-.container-portfolio {
-  padding: 96px 0 120px;
+.portfolio {
+  padding: 48px 0;
   /*  контур елемента 
   outline: 2px solid red;
   outline-offset: -2px; */
@@ -1293,7 +1290,7 @@ address {
   /* border: 1px solid var(--hover-btn); */
 }
 
-/* ==================== Adaptive ".container" (428, 768, 1158) ==================== */
+/* ==================== Adaptive "Portfolio MENU" (428, 768, 1158) ==================== */
 
 /* Phone styles (428 & >) */
 @media screen and (max-width: 767px) {
@@ -1355,6 +1352,10 @@ address {
 
 /* Desktop styles (1158 & >) */
 @media screen and (min-width: 1158px) {
+  .portfolio {
+    padding: 100px 0 120px;
+  }
+
   .portfolio-section {
     padding-top: 100px;
     padding-bottom: 120px;
