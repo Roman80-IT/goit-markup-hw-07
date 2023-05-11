@@ -1290,7 +1290,7 @@ address {
   /* border: 1px solid var(--hover-btn); */
 }
 
-/* ==================== Adaptive "Portfolio MENU" (428, 768, 1158) ==================== */
+/* ==================== Adaptive "Menu PORTFOLIO" (428, 768, 1158) ==================== */
 
 /* Phone styles (428 & >) */
 @media screen and (max-width: 767px) {
@@ -1310,19 +1310,21 @@ address {
     padding: 8px 16px;
   }
 
-  .portfolio-item {
-    margin-bottom: 48px;
-  }
+  /* ==================== Adaptive PORTFOLIO ==================== */
 
-  .portfolio-item-img {
+  /* .portfolio-item {
+    margin-bottom: 48px;
+  } */
+
+  /* .portfolio-item-img {
     width: 396px;
     height: 280px;
-  }
+  } */
 }
 
 /* Tablet styles (768 & >) */
 @media screen and (min-width: 768px) {
-  .portfolio-section {
+  .portfolio {
     padding-top: 64px;
     padding-bottom: 96px;
   }
@@ -1333,30 +1335,22 @@ address {
     margin-bottom: 64px;
   }
 
+  /* ==================== Adaptive PORTFOLIO ==================== */
   .portfolio-list {
-    display: flex;
-    justify-content: start;
-    flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 72px;
+    --items: 2;
+
+    row-gap: calc(var(--indent) * 3);
   }
 
-  .portfolio-item {
-    flex-basis: calc((100% - 24px) / 2);
-  }
-  .portfolio-item-img {
+  /* .portfolio-item-img {
     width: 356px;
     height: 300px;
-  }
+  } */
 }
 
 /* Desktop styles (1158 & >) */
 @media screen and (min-width: 1158px) {
   .portfolio {
-    padding: 100px 0 120px;
-  }
-
-  .portfolio-section {
     padding-top: 100px;
     padding-bottom: 120px;
   }
@@ -1365,17 +1359,15 @@ address {
     margin-bottom: 72px;
   }
 
+  /* ==================== Adaptive PORTFOLIO ==================== */
   .portfolio-list {
-    row-gap: 24px;
+    --items: 3;
   }
 
-  .portfolio-item {
-    flex-basis: calc((100% - 48px) / 3);
-  }
-  .portfolio-item-img {
+  /* .portfolio-item-img {
     width: 360px;
     height: 300px;
-  }
+  } */
 }
 
 /**
@@ -1388,17 +1380,18 @@ address {
   display: flex;
   flex-wrap: wrap;
 
+  justify-content: start;
+
   column-gap: var(--indent);
   row-gap: calc(var(--indent) * 2);
 
   list-style-type: none;
-  --items: 3;
+  --items: 1;
 }
 
 .portfolio-item {
-  max-width: 360px;
+  /* max-width: 360px; */
 
-  /* Ширину елементів вже задано в html */
   flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
 
@@ -1412,6 +1405,12 @@ address {
 .portfolio-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-item-img {
+  width: 100%;
+  /* width: 396px;
+    height: 280px;*/
 }
 
 .card-categories {
