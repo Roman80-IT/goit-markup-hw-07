@@ -1075,6 +1075,7 @@ address {
   display: flex;
   align-items: center;
   column-gap: 24px;
+  row-gap: 16px;
 }
 
 .subscribe-label {
@@ -1085,7 +1086,6 @@ address {
 .subscribe-email {
   height: 40px;
 
-  margin-bottom: 16px;
   padding: 8px 16px;
 
   border: 1px solid var(--white-color);
@@ -1178,13 +1178,6 @@ address {
 
 /* Tablet & Desktop styles (768 & >) */
 @media screen and (min-width: 768px) {
-  /* LOGO */
-  /* .footer-logo-box {
-    width: 264px;
-    flex-basis: 264px;
-    height: 112px;
-  } */
-
   .subscribe-email {
     width: 264px;
     margin-bottom: 0;
