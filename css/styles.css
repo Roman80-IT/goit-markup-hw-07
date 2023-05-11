@@ -952,7 +952,7 @@ address {
 /* items width: 168px; */
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .customers-container {
-    width: 582px;
+    width: 584px;
   }
 
   .clients-list {
@@ -1198,13 +1198,17 @@ address {
   }
 
   .footer-section .container {
-    width: 582px;
+    width: 584px;
 
     flex-wrap: wrap;
     justify-content: flex-start;
     /* align-items: flex-start; */
     column-gap: 24px;
     row-gap: 72px;
+  }
+
+  .subscribe {
+    width: 453px;
   }
 
   .subscribe-form {
