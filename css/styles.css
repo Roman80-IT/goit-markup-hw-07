@@ -786,6 +786,10 @@ address {
 /* маржинами картинку не вирівняти - потрібно на його "div" впливати
   margin-left: auto;
   margin-right: auto; */
+/* приклади list-style: */
+/* list-style-type: '\1F44D'; */
+/* list-style-type: space-counter; */
+/* list-style-type: none; */
 
 .team {
   /* Кожне Слово З Великої Літери */
@@ -802,13 +806,6 @@ address {
 
   column-gap: var(--indent);
 }
-
-/* приклади list-style: */
-/* list-style-type: '\1F44D'; */
-/* list-style-type: space-counter; */
-/* list-style-type: none; 
-
-*/
 
 .team-item {
   flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
@@ -874,6 +871,11 @@ address {
   /* .team {
     display: none;
   } */
+
+  .team .container {
+    max-width: 296px;
+    width: 100%;
+  }
 
   .team-list {
     --items: 1;
