@@ -97,9 +97,9 @@ section {
   margin-right: auto;
   padding: 0px 16px;
 
-  /*  контур елемента 
+  /* контур елемента  */
   outline: 2px solid red;
-  outline-offset: -2px;*/
+  outline-offset: -2px;
 }
 
 /* Tablet styles (768 & >) */
@@ -239,7 +239,8 @@ address {
 @media screen and (max-width: 767px) {
   .header-container {
     justify-content: space-between;
-    padding: 24px 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 
   .menu {
