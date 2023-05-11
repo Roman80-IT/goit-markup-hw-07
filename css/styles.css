@@ -64,7 +64,7 @@ body {
 }
 
 section {
-  padding-bottom: 120px;
+  padding-bottom: 96px;
 }
 
 /* для заголовків параметри */
@@ -115,6 +115,10 @@ section {
     max-width: 1158px;
 
     padding: 0px 15px;
+  }
+
+  section {
+    padding-bottom: 120px;
   }
 }
 
@@ -574,8 +578,7 @@ address {
 /*  (h3 = header під стиль "body") */
 
 .section-delta {
-  padding-top: 120px;
-  --items: 4;
+  padding-top: 96px;
 }
 
 .feature-list {
@@ -636,6 +639,11 @@ address {
 
 /* Desktop styles ( 1158 & > ) */
 @media screen and (min-width: 1158px) {
+  .section-delta {
+    padding-top: 120px;
+    --items: 4;
+  }
+
   .feature-list {
     /* --items: 4; */
 
@@ -1695,6 +1703,7 @@ address {
 .modal-checkbox-border {
   position: relative;
   display: inline-block;
+  flex-shrink: 0;
   width: 16px;
   height: 16px;
 
