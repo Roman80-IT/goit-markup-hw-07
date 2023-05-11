@@ -1759,16 +1759,17 @@ address {
   | Mobile menu
   |============================
 */
-
+/* .mobile-menu-item:not(:last-child) */
 /* Phone styles (428 & >) */
 @media screen and (max-width: 767px) {
   .mobile-menu-container {
     position: fixed;
-    top: 7%;
+    top: 0;
     left: 0;
 
     width: 100%;
-    height: calc(100% - 7%);
+    height: 100%;
+    /* height: calc(100% - 7%); */
 
     padding: 80px 40px 40px 40px;
     background-color: var(--white-color);
@@ -1794,14 +1795,11 @@ address {
     justify-content: center;
     align-items: center;
 
-    right: 0;
-    top: 0;
+    right: 24px;
+    top: 24px;
 
     width: 24px;
     height: 24px;
-
-    margin-right: 20px;
-    margin-top: 28px;
 
     background-color: var(--white-color);
     border-radius: 50%;
@@ -1819,7 +1817,7 @@ address {
     margin-bottom: 40px;
   } */
 
-  .mobile-menu-item {
+  .mobile-menu-item:not(:last-child) {
     margin-bottom: 40px;
   }
 
