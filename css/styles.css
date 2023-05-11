@@ -1256,8 +1256,15 @@ address {
 
   column-gap: var(--indent);
   row-gap: 16px;
+
   margin-bottom: 48px;
 }
+
+/*.portfolio-menu-item {
+     flex-basis: calc(
+      (100% - var(--indent) * (var(--items) - 1)) / var(--items)
+    ); 
+  }*/
 
 /* ========== BUTTON STYLE (Кнопки-фільтр) ========== */
 
@@ -1296,14 +1303,6 @@ address {
 @media screen and (max-width: 767px) {
   .portfolio-menu-list {
     max-width: 280px;
-    /* max-width: 100%; */
-  }
-
-  .portfolio-menu-item {
-    /* flex-basis: calc(
-      (100% - var(--indent) * (var(--items) - 1)) / var(--items)
-    ); */
-    /* margin-right: 24px; */
   }
 
   .filter-button {
@@ -1332,7 +1331,7 @@ address {
     padding-bottom: 120px;
   }
 
-  .portfolio-menu {
+  .portfolio-menu-list {
     margin-bottom: 72px;
   }
 
@@ -1367,8 +1366,6 @@ address {
 }
 
 .portfolio-item {
-  /* max-width: 360px; */
-
   flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
 
@@ -1386,8 +1383,6 @@ address {
 
 .portfolio-item-img {
   width: 100%;
-  /* width: 396px;
-    height: 280px;*/
 }
 
 .card-categories {
@@ -1429,10 +1424,6 @@ address {
 /* Phone styles (428 & >) */
 
 @media screen and (max-width: 767px) {
-  /* .portfolio-item {
-    margin-bottom: 48px;
-  } */
-
   /* .portfolio-item-img {
     width: 396px;
     height: 280px;
