@@ -90,16 +90,16 @@ section {
 
 /* Phone styles (428 & >) */
 .container {
-  min-width: 320px;
+  min-width: 300px;
   max-width: 428px;
 
   margin-left: auto;
   margin-right: auto;
   padding: 0px 16px;
 
-  /*  контур елемента */
+  /*  контур елемента 
   outline: 2px solid red;
-  outline-offset: -2px;
+  outline-offset: -2px;*/
 }
 
 /* Tablet styles (768 & >) */
@@ -408,9 +408,9 @@ address {
   background-repeat: no-repeat;
   text-align: center;
 
-  /*  контур елемента */
+  /*  контур елемента 
   outline: 2px solid red;
-  outline-offset: -2px;
+  outline-offset: -2px; */
 }
 
 .title {
@@ -427,12 +427,12 @@ address {
 /* Phone styles ( < 767 ) */
 @media screen and (max-width: 767px) {
   .hero-bloc {
-    display: flex;
-    flex-basis: 100%;
+    /* display: flex;
+    flex-basis: 100%; */
 
     max-width: 428px;
-    min-width: 320px;
-    /* width: 100%; */
+    min-width: 300px;
+    width: 100%;
 
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
