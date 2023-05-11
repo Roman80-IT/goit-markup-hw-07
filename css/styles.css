@@ -1004,7 +1004,7 @@ address {
 }
 
 .text-footer {
-  max-width: 264px;
+  width: 264px;
 
   font-size: 16px;
   line-height: 1.5;
@@ -1177,6 +1177,13 @@ address {
 
 /* Tablet & Desktop styles (768 & >) */
 @media screen and (min-width: 768px) {
+  /* LOGO */
+  /* .footer-logo-box {
+    width: 264px;
+    flex-basis: 264px;
+    height: 112px;
+  } */
+
   .subscribe-email {
     width: 264px;
     margin-bottom: 0;
