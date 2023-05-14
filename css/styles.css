@@ -1862,6 +1862,8 @@ address {
     flex-direction: column;
     justify-content: space-between;
 
+    gap: 48px;
+
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
 
@@ -1920,10 +1922,10 @@ address {
     color: var(--hover-btn);
   }
 
-  .mobile-contacts {
+  /* .mobile-contacts {
     margin-top: auto;
     margin-bottom: 48px;
-  }
+  } */
 
   .mobile-phone-link {
     font-weight: 700;
